@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="learning.html">Learning</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button id="darkModeToggle">🌙 Dark Mode</button>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <p>Get in touch with me</p>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <section>
+      <h3>sosial media</h3>
+      <div class="social-links">
+        <a href="https://web.facebook.com/cewen.cewen.12" class="fa fa-facebook"></a>
+        <a href="https://x.com/ZiwenTheo" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/zitheo_" class="fa fa-instagram"></a>
+        <a href="https://github.com/Noboden01" class="fa fa-github"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Deni's Coding Journey</p>
+  </footer>
+  <script>
+  const body = document.body;
+  const toggleBtn = document.getElementById("darkModeToggle");
+
+  // Cek preferensi dark mode
+  if (localStorage.getItem("darkMode") === "enabled") {
+    body.classList.add("dark-mode");
+    toggleBtn.textContent = "☀️ Light Mode";
+  }
+
+  // Klik toggle
+  toggleBtn.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+    if (body.classList.contains("dark-mode")) {
+      localStorage.setItem("darkMode", "enabled");
+      toggleBtn.textContent = "☀️ Light Mode";
+    } else {
+      localStorage.setItem("darkMode", "disabled");
+      toggleBtn.textContent = "🌙 Dark Mode";
+    }
+  });
+</script>
+
+</body>
+</html>

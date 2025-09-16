@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning - Learn to Code</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Learning to Code</h1>
+    <p>Pelajari dasar-dasar HTML, CSS, dan JavaScript di sini.</p>
+    <nav>
+      <a href="index.html">Home</a> 
+      <a href="learning.html">Learning</a>
+      <a href="about.html">About</a> 
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button id="darkModeToggle">🌙 Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Text formatting -->
+    <section>
+      <h2>Text Formatting: Bold, Italic, Underline</h2>
+      <ul>
+        <li><b>Bold</b> – menekankan informasi penting.</li>
+        <li><em>Italic</em> – menekankan atau menandai judul karya.</li>
+        <li><u>Underline</u> – menyoroti konten atau menunjukkan link.</li>
+      </ul>
+      <p>Kode: <code>&lt;b&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;u&gt;</code></p>
+    </section>
+
+    <!-- Lists -->
+    <section>
+      <h2>Lists</h2>
+      <ul>
+        <li>Unordered List (<code>&lt;ul&gt;</code>) – daftar tanpa urutan.</li>
+        <li>Ordered List (<code>&lt;ol&gt;</code>) – daftar berurutan.</li>
+        <li>Description List (<code>&lt;dl&gt;</code>) – daftar istilah dan deskripsinya.</li>
+      </ul>
+    </section>
+
+    <!-- Input Elements -->
+    <section>
+      <h2>Input Elements</h2>
+      <p><b>&lt;input&gt;</b> digunakan untuk membuat kolom interaktif pada form web.</p>
+      <p>Type attribute menentukan jenis input:</p>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Fungsi</th>
+            <th>Contoh Penggunaan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>text</td><td>Teks satu baris</td><td>Nama</td></tr>
+          <tr><td>password</td><td>Menyembunyikan teks</td><td>Login</td></tr>
+          <tr><td>email</td><td>Validasi email</td><td>Kontak</td></tr>
+          <tr><td>number</td><td>Input angka</td><td>Umur</td></tr>
+          <tr><td>checkbox</td><td>Pilih beberapa opsi</td><td>Minat</td></tr>
+          <tr><td>radio</td><td>Pilih satu opsi</td><td>Gender</td></tr>
+          <tr><td>submit</td><td>Kirim form</td><td>Tombol submit</td></tr>
+          <tr><td>file</td><td>Upload file</td><td>Foto</td></tr>
+          <tr><td>date</td><td>Pilih tanggal</td><td>Tanggal lahir</td></tr>
+          <tr><td>range</td><td>Slider nilai</td><td>Volume</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Contoh Form</h3>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+
+        <input type="submit" value="Submit">
+      </form>
+
+      <div class="code-box">
+<pre><code>
+&lt;form&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name" required&gt;
+
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email" required&gt;
+
+  &lt;label for="age"&gt;Age:&lt;/label&gt;
+  &lt;input type="number" id="age" name="age"&gt;
+
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+</code></pre>
+      </div>
+
+      <h3>Common Input Attributes</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Attribute</th>
+            <th>Fungsi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>name</td><td>Identifikasi input saat form dikirim</td></tr>
+          <tr><td>id</td><td>Identifier unik untuk label</td></tr>
+          <tr><td>value</td><td>Isi default input</td></tr>
+          <tr><td>placeholder</td><td>Petunjuk sebelum user mengetik</td></tr>
+          <tr><td>required</td><td>Harus diisi</td></tr>
+          <tr><td>readonly</td><td>Tidak bisa diubah</td></tr>
+          <tr><td>disabled</td><td>Nonaktif</td></tr>
+          <tr><td>maxlength</td><td>Batas karakter</td></tr>
+          <tr><td>min/max</td><td>Batas angka atau tanggal</td></tr>
+          <tr><td>step</td><td>Increment numeric</td></tr>
+          <tr><td>autocomplete</td><td>Menyarankan nilai sebelumnya</td></tr>
+          <tr><td>pattern</td><td>Validasi regex</td></tr>
+          <tr><td>size</td><td>Lebar input terlihat</td></tr>
+          <tr><td>autofocus</td><td>Fokus otomatis saat load</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Learn to Code Website</p>
+  </footer>
+
+  <script src="darkmode.js"></script>
+</body>
+</html>

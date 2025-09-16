@@ -1,0 +1,175 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+  padding-bottom: 50px;
+}
+
+/* Header */
+header {
+  background-color: #007acc;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav a {
+  margin-right: 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Dark Mode Toggle Button */
+#darkModeToggle {
+  background: #fff;
+  border: none;
+  padding: 8px 14px;
+  margin-left: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+#darkModeToggle:hover {
+  background: #ddd;
+}
+
+/* Main content */
+main, section {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2, h3, h4 {
+  color: #007acc;
+  margin-bottom: 10px;
+}
+
+p, li {
+  margin-bottom: 10px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background: #007acc;
+  color: white;
+}
+
+/* Form */
+form label {
+  font-weight: bold;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form button, input[type="submit"] {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form button:hover, input[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Code box */
+.code-box {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 15px 0;
+  overflow-x: auto;
+}
+
+/* Social icons */
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  border-radius: 50%;
+  text-decoration: none;
+  margin: 5px;
+  color: white;
+}
+.fa-facebook { background: #3b5998; }
+.fa-twitter { background: #1da1f2; }
+.fa-instagram { background: #e4405f; }
+.fa-github { background: #333; }
+
+/* DARK MODE */
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.dark-mode header {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode nav a {
+  color: #eee;
+}
+
+body.dark-mode main, 
+body.dark-mode section {
+  background: #1e1e1e;
+  box-shadow: 0 2px 8px rgba(255,255,255,0.05);
+}
+
+body.dark-mode th {
+  background: #333;
+  color: #eee;
+}
+
+body.dark-mode .code-box {
+  background: #222;
+  border-color: #444;
+}
